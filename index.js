@@ -25,19 +25,19 @@ const JWT_SECRET = "hvdvay6ert72839289()aiyg8t87qt72393293883uhefiuh78ttq3ifi782
 const productsSchema = new mongoose.Schema({
   name: {
     type: String,
-    // required: true,
+    required: true,
   },
   photourl: {
     type: String,
-    // required: true,
+    required: true,
   },
   description: {
     type: String,
-    // required: true
+    required: true
   },
   price: {
     type: Number,
-    // required: true
+    required: true
   },
 
   date: {
@@ -117,7 +117,7 @@ const connectDB = async () => {
 
 
 app.get('/', (req, res) => {
-  res.send('Welcome to Hone page');
+  res.send('Welcome to Hone route');
 });
 
 // CRUD - Create, Read, Update, Delete
